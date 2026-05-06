@@ -1,0 +1,35 @@
+A - INICIAR CORRIDA
+B - CONFIGURAR CORRIDA
+C - ULTIMA CORRIDA
+
+INICIAR CORRIDA:
+AO ACIONAR SENSOR - CONTA TEMPO ATÉ SER ACIONADO NOVAMENTE
+MOSTRA NA TELA - DISTÂNCIA PERCORRIDA (CONFIGURADA), TEMPO, VELOCIDADE MÉDIA
+
+CONFIGURAR CORRIDA:
+MOSTRA DISTANCIA ATUAL DO SENSOR
+CONFIGURA LIMITE MÍNIMO E MÁXIMO DE ACIONAMENTO
+CONFIGURA DISTANCIA DA CORRIDA
+
+ULTIMA CORRIDA:
+MOSTRA OS DADOS DA ÚLTIMA CORRIDA
+
+FUNÇÕES DO PROGRAMA
+
+void displayPage(pageNumber):
+	Mostra uma tela
+
+void selectPage(currentDisplay, keyPressed):
+	Seleciona a pagina com base na tela atual e na tecla pressionada
+
+void moveCursorLeft(currentDisplay):
+	Movimenta o cursor para a esquerda com base na tela atual
+void moveCursorRight(currentDisplay):
+	Movimenta o cursor para a direita com base na tela atual
+
+String writeKeyParameter(keyPressed);
+	enquanto o cursor for diferente de zero
+	Escreve na tela a tecla e armazena em uma variavel
+	3 variaveis, uma para cada casa do número
+	Contatena essas variaveis e converte em float
+
